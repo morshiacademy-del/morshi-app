@@ -1,0 +1,25 @@
+// Libraries
+import React from 'react';
+import { createNativeStackNavigator } from '@react-navigation/native-stack';
+
+// Interfaces
+import { HomeStackParamList } from './interface/types';
+
+// Screens
+
+// Navigation
+import { TabNavigationStack } from './TabNavigationStack';
+
+const Stack = createNativeStackNavigator<HomeStackParamList, 'HomeStack'>();
+
+export const HomeStack = () => {
+    return (
+        <Stack.Navigator id="HomeStack" screenOptions={{ headerShown: false }}>
+            <Stack.Screen
+                name="TabNavigationStack"
+                component={TabNavigationStack}
+                options={{ gestureEnabled: false }}
+            />
+        </Stack.Navigator>
+    );
+};

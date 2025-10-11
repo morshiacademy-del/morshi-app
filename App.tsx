@@ -1,22 +1,14 @@
+// Libraries
 import React from 'react';
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
-import { UserIcon } from '@/adapters/assets/icons';
+import { RootStack } from '@/adapters/navigation';
+import { NavigationContainer, useNavigationContainerRef } from '@react-navigation/native';
 
 export default function App() {
+    const navigationRef = useNavigationContainerRef();
+
     return (
-        <View style={styles.container}>
-            <Text> up App.tsx to start working on your app!</Text>
-            <UserIcon />
-            <StatusBar style="auto" />
-        </View>
+        <NavigationContainer ref={navigationRef}>
+            <RootStack />
+        </NavigationContainer>
     );
 }
-
-const styles = StyleSheet.create({
-    container: {
-        flex: 1,
-        alignItems: 'center',
-        justifyContent: 'center',
-    },
-});
