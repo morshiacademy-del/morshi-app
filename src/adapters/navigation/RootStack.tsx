@@ -15,7 +15,7 @@ export const RootStack = () => {
     return (
         <Stack.Navigator id="RootStack" screenOptions={{ headerShown: false, gestureEnabled: false }}>
             <Stack.Screen name="AuthStack" component={AuthenticationStack} />
-            <Stack.Screen name="HomeStack" component={HomeStack} />
+            <Stack.Screen name="HomeStack" component={HomeStack} options={{ animation: 'fade_from_bottom' }} />
         </Stack.Navigator>
     );
 };
