@@ -6,12 +6,13 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import { AuthStackParamList } from '.';
 
 // Screens
-import { LoginScreen } from '../screens';
+import { LoginScreen, WelcomeScreen } from '../screens';
 
 const Stack = createNativeStackNavigator<AuthStackParamList, 'AuthStack'>();
 
 export const AuthenticationStack = () => (
     <Stack.Navigator id="AuthStack" screenOptions={{ headerShown: false }}>
+        <Stack.Screen name="WelcomeScreen" component={WelcomeScreen} />
         <Stack.Screen name="LoginScreen" component={LoginScreen} />
     </Stack.Navigator>
 );

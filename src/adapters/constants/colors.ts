@@ -6,7 +6,8 @@ export const palette = {
     black_2: '#0A101E',
 
     //----- Blues -----//
-    blue: '#042456',
+    blue: '#0141CF',
+    blue_2: '#1874D2',
 
     //----- Whites -----//
     white: '#FFFFFF',
@@ -14,6 +15,7 @@ export const palette = {
     //----- Grays -----//
     gray: '#B0B0B0',
     gray_2: '#8391A1',
+    gray_3: '#CECFD2',
 
     //----- RGB -----//
     rgba: 'rgba(0,0,0,0.5)',
@@ -21,5 +23,5 @@ export const palette = {
     rgba_3: 'rgba(255, 255, 255, 0)',
 
     //----- Shared -----//
-    disabled: '#C6C6C8',
+    disabled: '#CBD5E1',
 };
