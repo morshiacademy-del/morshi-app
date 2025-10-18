@@ -1,4 +1,5 @@
 package com.anonymous.morshiapp
+import com.facebook.react.common.assets.ReactFontManager
 
 import android.app.Application
 import android.content.res.Configuration
@@ -40,6 +41,9 @@ class MainApplication : Application(), ReactApplication {
 
   override fun onCreate() {
     super.onCreate()
+    // @generated begin xml-fonts-init - expo prebuild (DO NOT MODIFY) sync-06c14bcf5b9cc2286ab09c95a9bcf7cecf04daf3
+    ReactFontManager.getInstance().addCustomFont(this, "Manrope", R.font.xml_manrope)
+    // @generated end xml-fonts-init
     DefaultNewArchitectureEntryPoint.releaseLevel = try {
       ReleaseLevel.valueOf(BuildConfig.REACT_NATIVE_RELEASE_LEVEL.uppercase())
     } catch (e: IllegalArgumentException) {

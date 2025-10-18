@@ -46,6 +46,14 @@
     </dict>
     <key>RCTNewArchEnabled</key>
     <true/>
+    <key>UIAppFonts</key>
+    <array>
+      <string>Manrope-Light.otf</string>
+      <string>Manrope-Regular.otf</string>
+      <string>Manrope-Medium.otf</string>
+      <string>Manrope-SemiBold.otf</string>
+      <string>Manrope-Bold.otf</string>
+    </array>
     <key>UILaunchStoryboardName</key>
     <string>SplashScreen</string>
     <key>UIRequiredDeviceCapabilities</key>

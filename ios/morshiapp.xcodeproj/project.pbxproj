@@ -9,23 +9,33 @@
 /* Begin PBXBuildFile section */
 		073F32C1C8D7F2414B39881D /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = 6B993E6BC489B1404E152ED9 /* PrivacyInfo.xcprivacy */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
+		1763FA9F9F3C4E6F8AEFF1E1 /* Manrope-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 5E2FF9AD55014707B1C380F6 /* Manrope-Medium.otf */; };
+		33137BDDB90D42EDA6A6690A /* Manrope-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 0707B317B8034182B76A52F4 /* Manrope-Regular.otf */; };
 		3E461D99554A48A4959DE609 /* SplashScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA286B85B6C04FC6940260E9 /* SplashScreen.storyboard */; };
 		5E25B6A4408734B1BCFDCF97 /* ExpoModulesProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85C77EA450E4AF19EE5BD688 /* ExpoModulesProvider.swift */; };
+		5F62B884A3DA46E48F48D563 /* Manrope-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 0D1B0E5706114AE88A4AF3B7 /* Manrope-Bold.otf */; };
+		92486971F9124BC89B99BC3D /* Manrope-SemiBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 4D83662994C943F18091EBFF /* Manrope-SemiBold.otf */; };
 		BB2F792D24A3F905000567C9 /* Expo.plist in Resources */ = {isa = PBXBuildFile; fileRef = BB2F792C24A3F905000567C9 /* Expo.plist */; };
 		DD6B6B8B4571DE2A1EA1DE11 /* libPods-morshiapp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F09D6565BF3941694A468443 /* libPods-morshiapp.a */; };
 		F11748422D0307B40044C1D9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F11748412D0307B40044C1D9 /* AppDelegate.swift */; };
+		F1F2C472D019478885D6AF79 /* Manrope-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = BF1CFB71A6B249B2A255CE8C /* Manrope-Light.otf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0707B317B8034182B76A52F4 /* Manrope-Regular.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Manrope-Regular.otf"; path = "../assets/fonts/Manrope-Regular.otf"; sourceTree = "<group>"; };
+		0D1B0E5706114AE88A4AF3B7 /* Manrope-Bold.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Manrope-Bold.otf"; path = "../assets/fonts/Manrope-Bold.otf"; sourceTree = "<group>"; };
 		13B07F961A680F5B00A75B9A /* morshiapp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = morshiapp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = morshiapp/Images.xcassets; sourceTree = "<group>"; };
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = morshiapp/Info.plist; sourceTree = "<group>"; };
 		47D2EB4AFD000A8A0FCAFDF4 /* Pods-morshiapp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-morshiapp.debug.xcconfig"; path = "Target Support Files/Pods-morshiapp/Pods-morshiapp.debug.xcconfig"; sourceTree = "<group>"; };
+		4D83662994C943F18091EBFF /* Manrope-SemiBold.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Manrope-SemiBold.otf"; path = "../assets/fonts/Manrope-SemiBold.otf"; sourceTree = "<group>"; };
+		5E2FF9AD55014707B1C380F6 /* Manrope-Medium.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Manrope-Medium.otf"; path = "../assets/fonts/Manrope-Medium.otf"; sourceTree = "<group>"; };
 		6B993E6BC489B1404E152ED9 /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; includeInIndex = 1; name = PrivacyInfo.xcprivacy; path = morshiapp/PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
 		85C77EA450E4AF19EE5BD688 /* ExpoModulesProvider.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ExpoModulesProvider.swift; path = "Pods/Target Support Files/Pods-morshiapp/ExpoModulesProvider.swift"; sourceTree = "<group>"; };
 		9008289DC562E7C2668824D9 /* Pods-morshiapp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-morshiapp.release.xcconfig"; path = "Target Support Files/Pods-morshiapp/Pods-morshiapp.release.xcconfig"; sourceTree = "<group>"; };
 		AA286B85B6C04FC6940260E9 /* SplashScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = SplashScreen.storyboard; path = morshiapp/SplashScreen.storyboard; sourceTree = "<group>"; };
 		BB2F792C24A3F905000567C9 /* Expo.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Expo.plist; sourceTree = "<group>"; };
+		BF1CFB71A6B249B2A255CE8C /* Manrope-Light.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Manrope-Light.otf"; path = "../assets/fonts/Manrope-Light.otf"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		F09D6565BF3941694A468443 /* libPods-morshiapp.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-morshiapp.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F11748412D0307B40044C1D9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = morshiapp/AppDelegate.swift; sourceTree = "<group>"; };
@@ -93,6 +103,7 @@
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
 				25566CB59E14091F950D589F /* Pods */,
 				A449585C4B98751CE2BAB75F /* ExpoModulesProviders */,
+				CC68A00BC3384A21A65B5C65 /* Resources */,
 			);
 			indentWidth = 2;
 			sourceTree = "<group>";
@@ -130,6 +141,19 @@
 			);
 			name = Supporting;
 			path = morshiapp/Supporting;
+			sourceTree = "<group>";
+		};
+		CC68A00BC3384A21A65B5C65 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				BF1CFB71A6B249B2A255CE8C /* Manrope-Light.otf */,
+				0707B317B8034182B76A52F4 /* Manrope-Regular.otf */,
+				5E2FF9AD55014707B1C380F6 /* Manrope-Medium.otf */,
+				4D83662994C943F18091EBFF /* Manrope-SemiBold.otf */,
+				0D1B0E5706114AE88A4AF3B7 /* Manrope-Bold.otf */,
+			);
+			name = Resources;
+			path = "";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -197,6 +221,11 @@
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
 				3E461D99554A48A4959DE609 /* SplashScreen.storyboard in Resources */,
 				073F32C1C8D7F2414B39881D /* PrivacyInfo.xcprivacy in Resources */,
+				F1F2C472D019478885D6AF79 /* Manrope-Light.otf in Resources */,
+				33137BDDB90D42EDA6A6690A /* Manrope-Regular.otf in Resources */,
+				1763FA9F9F3C4E6F8AEFF1E1 /* Manrope-Medium.otf in Resources */,
+				92486971F9124BC89B99BC3D /* Manrope-SemiBold.otf in Resources */,
+				5F62B884A3DA46E48F48D563 /* Manrope-Bold.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

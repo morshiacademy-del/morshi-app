@@ -1,32 +1,75 @@
 {
-  "expo": {
-    "name": "morshi-app",
-    "slug": "morshi-app",
-    "version": "1.0.0",
-    "orientation": "portrait",
-    "icon": "./assets/icon.png",
-    "userInterfaceStyle": "light",
-    "newArchEnabled": true,
-    "splash": {
-      "image": "./assets/splash-icon.png",
-      "resizeMode": "contain",
-      "backgroundColor": "#ffffff"
-    },
-    "ios": {
-      "supportsTablet": true,
-      "bundleIdentifier": "com.anonymous.morshiapp"
-    },
-    "android": {
-      "adaptiveIcon": {
-        "foregroundImage": "./assets/adaptive-icon.png",
-        "backgroundColor": "#ffffff"
-      },
-      "edgeToEdgeEnabled": true,
-      "predictiveBackGestureEnabled": false,
-      "package": "com.anonymous.morshiapp"
-    },
-    "web": {
-      "favicon": "./assets/favicon.png"
+    "expo": {
+        "name": "morshi-app",
+        "slug": "morshi-app",
+        "version": "1.0.0",
+        "orientation": "portrait",
+        "icon": "./assets/icon.png",
+        "userInterfaceStyle": "light",
+        "newArchEnabled": true,
+        "splash": {
+            "image": "./assets/splash-icon.png",
+            "resizeMode": "contain",
+            "backgroundColor": "#ffffff"
+        },
+        "ios": {
+            "supportsTablet": true,
+            "bundleIdentifier": "com.anonymous.morshiapp"
+        },
+        "android": {
+            "adaptiveIcon": {
+                "foregroundImage": "./assets/adaptive-icon.png",
+                "backgroundColor": "#ffffff"
+            },
+            "edgeToEdgeEnabled": true,
+            "predictiveBackGestureEnabled": false,
+            "package": "com.anonymous.morshiapp"
+        },
+        "web": {
+            "favicon": "./assets/favicon.png"
+        },
+        "plugins": [
+            [
+                "expo-font",
+                {
+                    "fonts": [
+                        "./assets/fonts/Manrope-Light.otf",
+                        "./assets/fonts/Manrope-Regular.otf",
+                        "./assets/fonts/Manrope-Medium.otf",
+                        "./assets/fonts/Manrope-SemiBold.otf",
+                        "./assets/fonts/Manrope-Bold.otf"
+                    ],
+                    "android": {
+                        "fonts": [
+                            {
+                                "fontFamily": "Manrope",
+                                "fontDefinitions": [
+                                    {
+                                        "path": "./assets/fonts/Manrope-Light.otf",
+                                        "weight": 300
+                                    },
+                                    {
+                                        "path": "./assets/fonts/Manrope-Regular.otf",
+                                        "weight": 400
+                                    },
+                                    {
+                                        "path": "./assets/fonts/Manrope-Medium.otf",
+                                        "weight": 500
+                                    },
+                                    {
+                                        "path": "./assets/fonts/Manrope-SemiBold.otf",
+                                        "weight": 600
+                                    },
+                                    {
+                                        "path": "./assets/fonts/Manrope-Bold.otf",
+                                        "weight": 700
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                }
+            ]
+        ]
     }
-  }
 }
