@@ -10,7 +10,7 @@ import { HomeScreen, MyCoursesScreen, ProfileScreen } from '../screens';
 import { TabNavigationParamList } from './interface/types';
 
 // Constants - Utilities
-import { palette } from '../constants';
+import { HEIGHT_TAB_NAVIGATION, palette } from '../constants';
 import { fontFamilyApp } from '../utilities';
 
 // Components
@@ -51,7 +51,7 @@ export const TabNavigationStack = () => {
         <Tab.Navigator
             id={'TabNavigationStack'}
             tabBar={props => <CustomTab {...props} />}
-            screenOptions={{ headerShown: false }}
+            screenOptions={{ headerShown: false, sceneStyle: { backgroundColor: palette.white } }}
         >
             <Tab.Screen
                 name="HomeScreen"
@@ -89,7 +89,7 @@ const styles = StyleSheet.create({
         bottom: 30,
         flexDirection: 'row',
         gap: 30,
-        height: 80,
+        height: HEIGHT_TAB_NAVIGATION,
         justifyContent: 'space-around',
         left: 20,
         paddingHorizontal: 40,
