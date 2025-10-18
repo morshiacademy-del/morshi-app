@@ -9,8 +9,9 @@ import { HomeScreen, MyCoursesScreen, ProfileScreen } from '../screens';
 // Interfaces
 import { TabNavigationParamList } from './interface/types';
 
-// Constants
+// Constants - Utilities
 import { palette } from '../constants';
+import { fontFamilyApp } from '../utilities';
 
 // Components
 import { BookIcon, HomeIcon, UserIcon } from '../assets/icons';
@@ -38,7 +39,7 @@ const CustomTab = ({ state, descriptors, navigation }: BottomTabBarProps) => (
                     style={{ ...styles.contentItemTab, borderBottomColor }}
                 >
                     {options.tabBarIcon && options.tabBarIcon({ color: colorTab, focused: isFocused, size: 24 })}
-                    <Text style={{ color: colorTab }}>{label.toString()}</Text>
+                    <Text style={{ ...styles.textTab, color: colorTab }}>{label.toString()}</Text>
                 </TouchableOpacity>
             );
         })}
@@ -47,7 +48,11 @@ const CustomTab = ({ state, descriptors, navigation }: BottomTabBarProps) => (
 
 export const TabNavigationStack = () => {
     return (
-        <Tab.Navigator id={'TabNavigationStack'} tabBar={props => <CustomTab {...props} />}>
+        <Tab.Navigator
+            id={'TabNavigationStack'}
+            tabBar={props => <CustomTab {...props} />}
+            screenOptions={{ headerShown: false }}
+        >
             <Tab.Screen
                 name="HomeScreen"
                 component={HomeScreen}
@@ -105,5 +110,9 @@ const styles = StyleSheet.create({
         gap: 4,
         height: '100%',
         justifyContent: 'center',
+    },
+    textTab: {
+        fontSize: 12,
+        fontFamily: fontFamilyApp[700],
     },
 });

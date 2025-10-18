@@ -10,8 +10,9 @@ import {
 } from 'react-native';
 import { LinearGradient } from 'expo-linear-gradient';
 
-// Constants
+// Constants - Utilities
 import { palette } from '../constants';
+import { fontFamilyApp } from '../utilities';
 
 interface IProps {
     title: string;
@@ -59,5 +60,6 @@ const styles = StyleSheet.create({
     text: {
         color: palette.white,
         fontSize: 18,
+        fontFamily: fontFamilyApp[500],
     },
 });

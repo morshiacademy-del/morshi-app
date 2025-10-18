@@ -7,8 +7,9 @@ import { useNavigation } from '@react-navigation/native';
 import { PasswordBlockIcon, PasswordIcon } from '@/adapters/assets/icons';
 import { ButtonBackComponent, ButtonComponent, TextInputComponent, ViewResponsive } from '@/adapters/components';
 
-// Constants
+// Constants - Utilities
 import { palette } from '@/adapters/constants';
+import { fontFamilyApp } from '@/adapters/utilities';
 
 export const LoginScreen = () => {
     const navigation = useNavigation();
@@ -79,6 +80,7 @@ const styles = StyleSheet.create({
     title: {
         color: palette.black_2,
         fontSize: 30,
+        fontFamily: fontFamilyApp[700],
     },
     contentFields: {
         gap: 14,

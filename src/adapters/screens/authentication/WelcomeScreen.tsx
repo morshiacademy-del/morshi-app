@@ -7,8 +7,9 @@ import { useNavigation } from '@react-navigation/native';
 import { BannerLoginIcon } from '@/adapters/assets/icons';
 import { ButtonComponent } from '@/adapters/components';
 
-// Constants
+// Constants - Utilities
 import { palette } from '@/adapters/constants';
+import { fontFamilyApp } from '@/adapters/utilities';
 
 export const WelcomeScreen = () => {
     const navigation = useNavigation();
@@ -29,19 +30,21 @@ export const WelcomeScreen = () => {
 
 const styles = StyleSheet.create({
     container: {
-        flex: 1,
         alignItems: 'center',
+        flex: 1,
     },
     title: {
-        fontSize: 30,
-        marginTop: 50,
-        marginBottom: 10,
         color: palette.black_2,
+        fontFamily: fontFamilyApp[700],
+        fontSize: 30,
+        marginBottom: 10,
+        marginTop: 50,
     },
     description: {
-        fontSize: 18,
-        textAlign: 'center',
-        marginBottom: 50,
         color: palette.black_2,
+        fontFamily: fontFamilyApp[500],
+        fontSize: 18,
+        marginBottom: 50,
+        textAlign: 'center',
     },
 });

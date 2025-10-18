@@ -2,8 +2,9 @@
 import React from 'react';
 import { View, StyleSheet, TextInput, Text } from 'react-native';
 
-// Constants
+// Constants - Utilities
 import { palette } from '../constants';
+import { fontFamilyApp } from '../utilities';
 
 interface IProps {
     title?: string;
@@ -51,6 +52,7 @@ const styles = StyleSheet.create({
         flex: 1,
         flexShrink: 1,
         flexWrap: 'wrap',
+        fontFamily: fontFamilyApp[400],
         fontSize: 16,
         includeFontPadding: false,
         lineHeight: 20,
