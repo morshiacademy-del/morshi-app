@@ -16,6 +16,7 @@ export type TabNavigationParamList = {
 
 export type HomeStackParamList = {
     TabNavigationStack: NavigatorScreenParams<TabNavigationParamList>;
+    DetailsProfileScreen: undefined;
 };
 
 export type RootStackParamList = {

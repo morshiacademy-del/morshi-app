@@ -1,3 +1,4 @@
+export * from './AppBarComponent';
 export * from './ButtonBackComponent';
 export * from './ButtonComponent';
 export * from './TextInputComponent';

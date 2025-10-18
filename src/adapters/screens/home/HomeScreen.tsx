@@ -2,11 +2,16 @@
 import React from 'react';
 import { View, Text, StyleSheet } from 'react-native';
 
+// Components
+import { AppBarComponent, ViewResponsive } from '@/adapters/components';
+
 export const HomeScreen = () => {
     return (
-        <View style={styles.container}>
-            <Text>I N I C I O</Text>
-        </View>
+        <ViewResponsive header={<AppBarComponent />}>
+            <View style={styles.container}>
+                <Text>I N I C I O</Text>
+            </View>
+        </ViewResponsive>
     );
 };
 

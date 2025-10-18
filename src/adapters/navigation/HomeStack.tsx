@@ -6,6 +6,7 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import { HomeStackParamList } from './interface/types';
 
 // Screens
+import { DetailsProfileScreen } from '../screens';
 
 // Navigation
 import { TabNavigationStack } from './TabNavigationStack';
@@ -20,6 +21,7 @@ export const HomeStack = () => {
                 component={TabNavigationStack}
                 options={{ gestureEnabled: false }}
             />
+            <Stack.Screen name="DetailsProfileScreen" component={DetailsProfileScreen} />
         </Stack.Navigator>
     );
 };

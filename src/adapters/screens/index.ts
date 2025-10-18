@@ -1,3 +1,4 @@
+export * from './DetailsProfileScreen';
 export * from './authentication/LoginScreen';
 export * from './authentication/WelcomeScreen';
 export * from './home/HomeScreen';

@@ -8,6 +8,7 @@ export const palette = {
     //----- Blues -----//
     blue: '#0141CF',
     blue_2: '#1874D2',
+    blue_3: '#1E293B',
 
     //----- Whites -----//
     white: '#FFFFFF',
@@ -16,6 +17,7 @@ export const palette = {
     gray: '#B0B0B0',
     gray_2: '#8391A1',
     gray_3: '#CECFD2',
+    gray_4: '#E2E8F0',
 
     //----- RGB -----//
     rgba: 'rgba(0,0,0,0.5)',
