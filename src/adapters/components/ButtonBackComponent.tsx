@@ -1,12 +1,12 @@
 // Libraries
 import React from 'react';
-import { StyleSheet, TouchableOpacity } from 'react-native';
+import { TouchableOpacity } from 'react-native';
 
 // Components
 import { ArrowLeftIcon } from '../assets/icons';
 
 // Constants
-import { palette } from '../constants';
+import { palette, stylesShared } from '../constants';
 
 interface IProps {
     onPress: () => void;
@@ -14,20 +14,8 @@ interface IProps {
 
 export const ButtonBackComponent = ({ onPress }: IProps) => {
     return (
-        <TouchableOpacity style={styles.content} onPress={onPress} activeOpacity={0.7}>
+        <TouchableOpacity style={stylesShared.contentIcon} onPress={onPress} activeOpacity={0.7}>
             <ArrowLeftIcon fill={palette.black_2} />
         </TouchableOpacity>
     );
 };
-
-const styles = StyleSheet.create({
-    content: {
-        alignItems: 'center',
-        borderColor: palette.gray_3,
-        borderRadius: 8,
-        borderWidth: 1,
-        height: 30,
-        justifyContent: 'center',
-        width: 30,
-    },
-});

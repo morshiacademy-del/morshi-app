@@ -1,6 +1,7 @@
 // Libraries
 import React from 'react';
 import { Text, StyleSheet, ScrollView, View } from 'react-native';
+import { useNavigation } from '@react-navigation/native';
 
 // Components
 import { AppBarComponent, CardCoursesComponent, CoursesFeaturedComponent, ViewResponsive } from '@/adapters/components';
@@ -12,6 +13,8 @@ import { HEIGHT_TAB_NAVIGATION, palette } from '@/adapters/constants';
 const PADDING_HORIZONTAL = 24;
 
 export const HomeScreen = () => {
+    const navigation = useNavigation();
+
     return (
         <ViewResponsive header={<AppBarComponent />}>
             <ScrollView contentContainerStyle={styles.container} showsVerticalScrollIndicator={false}>
@@ -21,7 +24,10 @@ export const HomeScreen = () => {
                 <Text style={styles.titleSection}>Cursos</Text>
                 <View style={styles.contentCourses}>
                     {Array.from({ length: 2 }).map((item, index) => (
-                        <CardCoursesComponent key={index} />
+                        <CardCoursesComponent
+                            key={index}
+                            onPress={() => navigation.navigate('HomeStack', { screen: 'CourseDetailsScreen' })}
+                        />
                     ))}
                 </View>
             </ScrollView>

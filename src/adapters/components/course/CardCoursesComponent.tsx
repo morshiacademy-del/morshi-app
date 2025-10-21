@@ -1,6 +1,6 @@
 // Libraries
 import React from 'react';
-import { View, Text, StyleSheet, Image } from 'react-native';
+import { Text, StyleSheet, Image, TouchableOpacity } from 'react-native';
 
 // Constants - Utilities
 import { fontFamilyApp } from '@/adapters/utilities';
@@ -9,14 +9,18 @@ import { palette, stylesShared } from '@/adapters/constants';
 // Components
 import { PreviewCourseImg } from '@/adapters/assets/images';
 
-export const CardCoursesComponent = () => {
+interface IProps {
+    onPress: () => void;
+}
+
+export const CardCoursesComponent = ({ onPress }: IProps) => {
     return (
-        <View style={[styles.content, stylesShared.shadow]}>
+        <TouchableOpacity style={[styles.content, stylesShared.shadow]} onPress={onPress} activeOpacity={0.7}>
             <Image source={PreviewCourseImg} style={styles.image} />
             <Text style={styles.titleCourse}>Titulo del curso</Text>
             <Text style={styles.textInfo}>Nombre del tutor • 12 lecciones • 1 hr 20 min</Text>
             <Text style={styles.textPrice}>Gratis</Text>
-        </View>
+        </TouchableOpacity>
     );
 };
 

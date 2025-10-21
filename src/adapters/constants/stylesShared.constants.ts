@@ -14,4 +14,13 @@ export const stylesShared = StyleSheet.create({
         shadowRadius: 4,
         elevation: 4,
     },
+    contentIcon: {
+        alignItems: 'center',
+        borderColor: palette.gray_3,
+        borderRadius: 8,
+        borderWidth: 1,
+        height: 30,
+        justifyContent: 'center',
+        width: 30,
+    },
 });
