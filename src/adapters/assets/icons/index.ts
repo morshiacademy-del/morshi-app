@@ -16,6 +16,7 @@ import PlayVideoIcon from './play_video_icon.svg';
 import SharedIcon from './shared_icon.svg';
 import StarIcon from './star_icon.svg';
 import TimeIcon from './time_icon.svg';
+import UploadIcon from './upload_icon.svg';
 import UserIcon from './user_icon.svg';
 
 export {
@@ -37,5 +38,6 @@ export {
     SharedIcon,
     StarIcon,
     TimeIcon,
+    UploadIcon,
     UserIcon,
 };

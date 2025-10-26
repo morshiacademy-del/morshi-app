@@ -22,9 +22,10 @@ interface IProps {
         text?: StyleProp<TextStyle>;
     };
     propsButton?: TouchableOpacityProps;
+    iconComponent?: React.ReactNode;
 }
 
-export const ButtonComponent = ({ title, onPress, customStyle, propsButton }: IProps) => {
+export const ButtonComponent = ({ title, onPress, customStyle, propsButton, iconComponent }: IProps) => {
     return (
         <TouchableOpacity
             onPress={onPress}
@@ -38,6 +39,7 @@ export const ButtonComponent = ({ title, onPress, customStyle, propsButton }: IP
                 end={{ x: 1, y: 0 }}
                 style={styles.gradient}
             >
+                {iconComponent}
                 <Text style={[styles.text, customStyle?.text]}>{title}</Text>
             </LinearGradient>
         </TouchableOpacity>
@@ -53,6 +55,8 @@ const styles = StyleSheet.create({
     },
     gradient: {
         alignItems: 'center',
+        flexDirection: 'row',
+        gap: 10,
         height: '100%',
         justifyContent: 'center',
         width: '100%',

@@ -18,6 +18,7 @@ export const palette = {
     gray_2: '#8391A1',
     gray_3: '#CECFD2',
     gray_4: '#E2E8F0',
+    gray_5: '#F1F5F9',
 
     //----- RGB -----//
     rgba: 'rgba(0,0,0,0.5)',

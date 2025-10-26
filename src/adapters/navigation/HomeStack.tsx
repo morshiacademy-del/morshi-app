@@ -6,7 +6,7 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import { HomeStackParamList } from './interface/types';
 
 // Screens
-import { CourseDetailsScreen, DetailsProfileScreen } from '../screens';
+import { CourseDetailsScreen, DetailsEnrolledCoursesScreen, DetailsProfileScreen } from '../screens';
 
 // Navigation
 import { TabNavigationStack } from './TabNavigationStack';
@@ -22,6 +22,7 @@ export const HomeStack = () => {
                 options={{ gestureEnabled: false }}
             />
             <Stack.Screen name="CourseDetailsScreen" component={CourseDetailsScreen} />
+            <Stack.Screen name="DetailsEnrolledCoursesScreen" component={DetailsEnrolledCoursesScreen} />
             <Stack.Screen name="DetailsProfileScreen" component={DetailsProfileScreen} />
         </Stack.Navigator>
     );
