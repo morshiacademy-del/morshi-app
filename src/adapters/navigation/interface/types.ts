@@ -18,6 +18,7 @@ export type HomeStackParamList = {
     TabNavigationStack: NavigatorScreenParams<TabNavigationParamList>;
     CourseDetailsScreen: undefined;
     DetailsEnrolledCoursesScreen: undefined;
+    TopicDetailsScreen: undefined;
     DetailsProfileScreen: undefined;
 };
 

@@ -58,7 +58,9 @@ export const DetailsEnrolledCoursesScreen = () => {
                                     </View>
                                     <ButtonComponent
                                         title="Realizar entrega"
-                                        onPress={() => {}}
+                                        onPress={() =>
+                                            navigation.navigate('HomeStack', { screen: 'TopicDetailsScreen' })
+                                        }
                                         iconComponent={<UploadIcon stroke={palette.white} />}
                                         customStyle={{ button: { width: 150, height: 40 }, text: { fontSize: 12 } }}
                                     />
